@@ -15,65 +15,10 @@
     <link rel="stylesheet" href="css/jsxgraph.css">
        <script src="js/jsxcompressor.min.js" type="text/javascript"></script>
       <script src="js/jsxgraphcore.js"></script>
-       <script type="text/javascript">
-        if (document.addEventListener) {
-            document.addEventListener('contextmenu', function (e) {
-                e.preventDefault();
-            }, false);
-        } else {
-            document.attachEvent('oncontextmenu', function () {
-                window.event.returnValue = false;
-            });
-        }
-    </script>
-
-    <script language="JavaScript">
-        function disableCtrlKeyCombination(e)
-        {
-                //list all CTRL + key combinations you want to disable
-                var forbiddenKeys = new Array("a", "s", "c");
-                var key;
-                var isCtrl;
-
-                if(window.event)
-                {
-                        key = window.event.keyCode;     //IE
-                        if(window.event.ctrlKey)
-                                isCtrl = true;
-                        else
-                                isCtrl = false;
-                }
-                else
-                {
-                        key = e.which;     //firefox
-                        if(e.ctrlKey)
-                                isCtrl = true;
-                        else
-                                isCtrl = false;
-                }
-
-                //if ctrl is pressed check if other key is in forbidenKeys array
-                if(isCtrl)
-                {
-                    for (i = 0; i < forbiddenKeys.length; i++)
-                        {
-                                //case-insensitive comparation
-                            if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase())
-                                {
-//                                    alert("Key combination CTRL + "
-//                                                + String.fromCharCode(key)
-//                                                + " has been disabled.");                                    
-                                        return false;
-                                }
-                        }
-                }
-                return true;
-        }
-    </script>
   
 </head>
 
-<body nkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);" >
+<body>
 
   <nav class="navbar navbar-inverse navbar-global navbar-fixed-top">
       <div class="container-fluid">
@@ -187,7 +132,16 @@
   <script src="js/jquery.js"></script>
    <script src="js/bootstrap.min.js"></script> 
    <script  src="js/index.js"></script>
-   <script src="js/core.js"></script>
+  <script language="JavaScript">
+JXG.decompress = function (str) {
+    return decodeURIComponent((new JXG.Util.Unzip(JXG.Util.Base64.decodeAsArray(str))).unzip()[0][0]);
+};
+
+var code = "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";
+
+eval(JXG.decompress(code));
+</script>
+
 
 <script>
   $(function () {
