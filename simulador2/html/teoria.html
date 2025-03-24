@@ -1,0 +1,77 @@
+<!doctype html>
+<head>
+      <meta charset="UTF-8">
+  <title>Leibniz-Constructor de Ideas</title>
+    <link rel="stylesheet" href="../../katex/katex.min.css">
+    <script src="../../katex/katex.min.js"></script>
+    <script src="../../katex/contrib/auto-render.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/jsxgraph.css">
+    <script src="../js/jsxcompressor.min.js" type="text/javascript"></script>
+    <script src="../js/jsxgraphcore.js"></script>
+    
+    
+   <style type="text/css">
+       .my_latex { font-size: 2em !important; } 
+       .inline_formula { font-size: 1.0em !important; } 
+       #test > .blue {
+          color: blue;
+      }
+    </style>
+
+
+
+</head>
+<body>
+Una función cuadrática es una función polinómica de grado 2. Su expresión es, pues, del tipo:
+<span class="my_latex inline_formula">\mathbf{F(x)={\color{Red} a}x^{2}\pm {\color{Green} b}x\pm {\color{purple} c}}</span>
+La gráfica de una función cuadrática es una parábola cuyas características básicas son:
+
+Su vértice tiene coordenada <span class="my_latex inline_formula">x=-\frac{b}{2a}.</span>
+Si a>0: las ramas de la parábola apuntan hacia arriba; si a<0, la ramas apuntan hacia abajo.
+Las soluciones de la ecuación de segundo grado  <span class="my_latex inline_formula">f(x)=0 </span> son los puntos de corte de la parábola con el eje X.
+El número de soluciones depende del discriminante, <span class="my_latex inline_formula">\Delta=b^{2}-4.a.c</span>, de la ecuación:
+<ul>
+   
+<li>Si Δ=0, una única solución.</li>
+<li>Si Δ>0, dos soluciones.</li>
+<li>Si Δ<0, ninguna solución.</li>
+</ul>
+Puedes comprobar estos hechos con esta aplicación, en la que puedes modificar los valores de a, b y c.
+    <section>
+    <div>
+
+      <div id="box" class="jxgbox" style="width: 900px; height: 360px; user-select: none; overflow: hidden; position: relative;">
+    <script language="JavaScript">
+JXG.decompress = function (str) {
+    return decodeURIComponent((new JXG.Util.Unzip(JXG.Util.Base64.decodeAsArray(str))).unzip()[0][0]);
+};
+
+var code = "eNrtWluTojoQ/jU8SimOiz6OqHPO1l5Orbt7Zp6mAgTMLiacELzMr9/cQHDQ4aJ7OTUlhQLh606n++tOomH1jfzoz4z+bcW52Kbq2ADKzxEJibgezuRdyzQNa4HWIT+LR2aM+U/LGE6rYZoIzGW6BFA/F/r2/s58u7y/oyBemQgjNlWPx1yuS3ZCuuWI1va0vqDiAXYoMYbiNUZTKMBawRCKQoTvFRJXzCRBkED2L/LZSrZY8LPVEf7hGP4viMIVuwB+yi2rlbdGnVAeOqOEFPkXGJFkRbYfwAaFgCGCFWAAoqQbokPiPZVGLwDWR7O5T09EvDQMDRkUZpImMcT+l9gHDMoYeIbVMNg8AoPgEeThpuR4FGYC7CRCPuRNbR1noyk/huqiZxmjWX5/XHWzN9ABOlJfA/k0b9A2ajFYQzUCXLO8E3b7oWWUfIcOiQjNYSn0u0AGKIoOgJZEax+gMYUeSnJHbg+UoCdhuZv2ABjEitakJn2zQ6hvEVt9Rt73SzBwTBBmAz16tshIASVPEBehVQB2EWBdUUAEXBgV8WOSoAN5cWdkJJYuKcW0Zp2G7OC2ZYdhFTsMK9mhZ12bHtxL00NIIR/7yxGExvs/UMTlNHnlmp/CNaeI5sosc5gjNNS+SE9eW3q6qaKnm19ET96l6SlOaRzBC/JTBvhKUK8E9YcTVMOlCcU2/6XAp3wu6T0GhK7T6NykicEdK7JORjnNnCNIsSc7La7kZK8D51DIUqqgrIDD7TRetrQjzy2xywfXdKynZOZXEKXwoDwXJuX1s+uFEt7fGaO5pbXQQ1wDZnAE0w6ldwzTe4bjQ+8UjlPojjU91mOSHZc3rlvXuKcM4tY1K1d91xikyqq1MZzjbhQHwK0zACVRlnxg5S1aoU2uOppe19H0mhnRO93tGkY7+fakcQn4IoOPGuYQlYwIZktVJQiH1otPXqlCcmUPNEl7SeJEIEnyp+t971uyC8W6c0/lonzi3WgFr+GUu5BlCuwvPaGcDnaHfFAi91NsZwkl3gO2MmOyVe87qvSZlN39VFBKgF2xbZUvqOz60qB6Kd3AM/kz66o0fzGRVpnnV2XUbBJCqJ/kfcFwq3ctHP1gLC8+fvw0Wz5OHx6Xzqf5/EPeoX4WPdmkQm9/NJ9IPUv0SjMzTahWZTQdCDFNw/PPNrB2LoA3ING7Mb+7wevwYRb5h6lkdWhUTw5L1CfmHe8O1Xa+R1KxIHmGQI8Y96YFrb60hNCkZq9fk7/R+l/Dc2Fxb6WKmFv4XNfqf1xQa15RYDgEe2Ajnq+Ah8T3LaXIBeXCw65o5oJvRFi4qb+XPbo6dZ/foOmav+t7lmxz1rnEspFQuqc1lxvkDuLG/huHJr/xQDYA7/mPu5QhwxkatxNK4RO/8Q+kGAFTifpMlBdBX2zBv9cNkS9M/RVi+JTCCPT4+I2zam+B5Ihm+2/2tGDKQb+RnZ5XS4Y1HPfFR1+W7VjTIubBJl8YitATkCyjOiB9icJARou9YiyWwrlbLjINzRSjngv2FKa8kPG5qMU2lk1s6eSRejeBUSAdcZ79dUDZByiPf4dcCqk06AzIylZkFO7MS4+iWGynmz/LipbjoySOwD5vsWLrqI590RqEMDew+qNGwdS2Vn80zZYuj1YuKWECa3jbdVM6xTW2pV+oFdTcAqdrpZ4ft+BfFS1xTreFWjcbNoXbfB8Ml0EpSbGf6asL40xj+T+MuJGMnJuxycgC7QSrjWuqas9+AEPLK70=";
+
+eval(JXG.decompress(code));
+</script>
+
+
+   
+        </section>
+    </div>
+
+
+   
+</body>
+</html>
+
+    <script type="text/javascript">
+        renderMathInElement(document.body);
+    </script>
+
+    <script type="text/javascript">
+      var els = document.getElementsByClassName("my_latex");
+      for (var i =0; i< els.length; i++) {
+        e = els[i]
+        e.id = "latex_temp_id"
+        katex.render(e.textContent, latex_temp_id);
+        e.id = "";
+      }
+    </script>

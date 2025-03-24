@@ -1,0 +1,44 @@
+*{margin: 0; padding: 0}
+body { 
+    background-color: #ebebeb; 
+    font: 8pt Verdana, Arial, Helvetica, sans-serif; 
+    margin: 10 0 10 0px; 
+    text-align: center; 
+} 
+#contenedor{ 
+    text-align: left; 
+    margin: auto; 
+    width: 1200px; 
+} 
+
+#cabecera{ 
+    background-color: #d0d0ff; 
+    color: #333300; 
+    font-size:12pt; 
+    font-weight: bold; 
+    padding: 3 3 3 10px; 
+} 
+
+#cuerpo{ 
+    margin: 10 0 10 0px; 
+} 
+
+#lateral{ 
+    background-color: #FFF; 
+    width: 570px; 
+    float:left; 
+}  
+
+#otrolado{ 
+    background-color: #FFF;
+    float: right;   
+    width: 600px; 
+} 
+
+#pie{ 
+    background-color: #cccccc; 
+    clear: both; 
+    padding: 3 10 3 10px; 
+    text-align:right; 
+}
+ 

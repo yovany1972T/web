@@ -1,0 +1,139 @@
+<!doctype html>
+
+  <script src="../js/jquery.js"></script>
+
+  <script type="text/javascript">
+ 
+</script>
+
+<head>
+      <meta charset="UTF-8">
+  <title>Leibniz-Constructor de Ideas</title>
+    <link rel="stylesheet" href="../../katex/katex.min.css">
+    <script src="../../katex/katex.min.js"></script>
+    <script src="../../katex/contrib/auto-render.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/jsxgraph.css">
+    <script src="../js/jsxcompressor.min.js" type="text/javascript"></script>
+    <script src="../js/jsxgraphcore.js"></script>
+
+
+    
+     <link rel="Stylesheet" type="text/css" href="../css/ejemplo.css">
+
+ 
+   <style type="text/css">
+       .my_latex { font-size: 2em !important; } 
+       .inline_formula { font-size: 1.0em !important; } 
+       #test > .blue {
+          color: blue;
+      }
+    </style>
+
+
+
+
+
+<STYLE type="text/css">
+
+h1 {
+  height: 10px;
+  width: 80%;
+  background-color: gris;
+}
+   
+      
+ </STYLE>
+
+
+
+</head>
+<body>
+<div id="contenedor"> 
+    <div id="cabecera"> 
+       Funciones <b><font color="blue">Seno</font> & <b><font color="red">Coseno </font>
+    </div> 
+
+    <div id="cuerpo"> 
+
+       <div id="lateral">
+  <p><b><font color="blue">Podemos observar varias características de la función seno:</font></b></p>
+<ul>
+  <li>Su dominio es R y es continua.</li>
+  <li>Su recorrido es   [- 1, 1]   ya que    <span class="my_latex inline_formula">-1\leq \sin x\leq 1</span> </li>
+  <li>Corta al eje X en los puntos   <span class="my_latex inline_formula">k.\Pi</span>   con   k∈Z .</li>
+  <li>Corta al eje Y en el punto   (0, 0) .</li>
+  <li>Es impar, es decir, simétrica respecto al origen <span class="my_latex inline_formula">\sin(-x)  = -\sin(x)</span> </li>   
+  <li>Es periódica de periodo    <span class="my_latex inline_formula">2\Pi  : \sin(x) = \sin (x + 2\Pi)</span> </li>
+  <li>Está acotada superiormente por 1 e inferiormente por - 1. </li>
+</ul>
+
+       </div>
+
+       <div id="otrolado"> 
+
+     <p><b><font color="red">Podemos observar varias características de la función coseno:</font></b></p>
+<ul>
+  <li>Su dominio es R y es continua.</li>
+  <li>Su recorrido es   [- 1, 1]   ya que   <span class="my_latex inline_formula">-1\leq \cos x\leq 1</span> .</li>
+  <li>Corta al eje X en los puntos   <span class="my_latex inline_formula"> \Pi/2 + k.\Pi  </span> con   k∈Z .</li>
+  <li>Corta al eje Y en el punto   (0, 1) .</li>
+  <li>Es par, es decir, simétrica respecto al eye Y: <span class="my_latex inline_formula">\cos(x)=\cos(-x) </span> </li>   
+  <li>Es periódica de periodo    <span class="my_latex inline_formula">2\Pi  : \cos(x) = \cos(x + 2\Pi)</span> </li>
+  <li>Está acotada superiormente por 1 e inferiormente por - 1. </li>
+</ul>
+    </div>      
+    </div>  
+    </div>
+    <section>
+    
+ <div>
+<form name="form1" method="post" action="">
+ <select name="funciones" id="funciones" size="1" onChange='DrawGraph()'>
+ <option selected>Escoja una Función</option>
+ <option value="curve_1">y = cos(x)</option>
+ <option value="curve_2">y = sin(x)</option>
+ </select> 
+</form>
+ </div>
+
+      <div id="box" class="jxgbox" style="width: 1000px; height: 360px; user-select: none; overflow: hidden; position: center;">
+<script language="JavaScript">
+JXG.decompress = function (str) {
+    return decodeURIComponent((new JXG.Util.Unzip(JXG.Util.Base64.decodeAsArray(str))).unzip()[0][0]);
+};
+
+var code = "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";
+
+eval(JXG.decompress(code));
+</script>
+   
+
+
+
+ 
+
+
+   
+        </section>
+    </div>
+
+
+   
+</body>
+</html>
+
+    <script type="text/javascript">
+        renderMathInElement(document.body);
+    </script>
+
+    <script type="text/javascript">
+      var els = document.getElementsByClassName("my_latex");
+      for (var i =0; i< els.length; i++) {
+        e = els[i]
+        e.id = "latex_temp_id"
+        katex.render(e.textContent, latex_temp_id);
+        e.id = "";
+      }
+    </script>
+

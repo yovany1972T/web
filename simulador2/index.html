@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Leibniz-Constructor de Ideas</title>
+  
+  
+ 
+
+   <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/jsxgraph.css">
+     <script src="js/jsxcompressor.min.js" type="text/javascript"></script>
+     <script src="js/jsxgraphcore.js"></script>
+     <script src="js/numerical.js"></script>
+
+  
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-global navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Leibniz v1.0</a>
+          <div class="col-lg-4">           
+          <div align="right"><img src="../img/leibniz.jpg"  style="width:34px;" alt="..." class="img-circle profile_img"></div>           
+         </div>
+
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-user navbar-right">
+        
+            <li><a href="../index.html"><span class="glyphicon glyphicon-log-out"></span> Salir</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+<nav class="navbar-primary">
+  <a href="#" class="btn-expand-collapse"><span class="glyphicon glyphicon-menu-left"></span></a>
+  <ul class="navbar-primary-menu">
+    <li>
+      <a href="index.html" title="Simulador "><span class="glyphicon glyphicon-blackboard"></span><span class="nav-label">Simulador</span></a>
+      <a href="#"data-toggle="modal" data-target="#miModal" title="Objetivos de Aprendizaje" ><span class="glyphicon glyphicon-book"></span><span class="nav-label">Objetivos de Aprendizaje</span></a>
+      <a href="#" data-toggle="modal" data-target="#miModal2" title="Actividades de Aprendizaje"><span class="glyphicon glyphicon-book"></span><span class="nav-label">Actividades de Aprendizaje</span></a>
+      <a href="../index.html" title="Ir al Panel"><span class="glyphicon glyphicon-home" ></span><span class="nav-label">Panel</span></a>
+      
+    </li>
+  </ul>
+</nav>
+
+
+
+<div class="main-content">
+
+<div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Objetivos de aprendizaje:</h4>
+      </div>
+      <div class="modal-body">  
+<ul>
+<li>Asociar las razones de movimiento parabólico a relaciones funcionales.   
+<li>Establecer el tipo de dependencia entre las variables y vs t & x vs t .
+<li>Visualizar las gráficas que relaciona y, x vs tiempo.
+<li>Identificar la expresión matemática o modelo utilizado para hallar la funcion de y(t), x(t). 
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="miModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Actividades de Aprendizaje:</h4>
+      </div>
+      <div class="modal-body">   
+              <embed src="pdf/actividad.pdf" width="580" height="600">
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div class="container">
+  
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#home">Modelo</a></li>
+    <li><a data-toggle="pill" href="html/teoria.html#menu1">Teoría</a></li>
+
+  </ul>
+  
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+         <div id="box" class="jxgbox" style="width: 1100px; height: 600px; user-select: none; overflow: hidden; position: relative;">
+    </div>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+     
+       <object type="text/html" data="html/teoria.html" width="1100px" height="600px" style="width: 1100px; height: 600px; user-select: none; overflow: hidden; position: relative;">
+    </object>
+    </div>
+  </div>
+</div> 
+
+  <script src="js/jquery.js"></script>
+   <script src="js/bootstrap.min.js"></script> 
+   <script  src="js/index.js"></script>
+  <script language="JavaScript">
+JXG.decompress = function (str) {
+    return decodeURIComponent((new JXG.Util.Unzip(JXG.Util.Base64.decodeAsArray(str))).unzip()[0][0]);
+};
+
+var code = "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";
+
+eval(JXG.decompress(code));
+</script>
+
+<script>
+  $(function () {
+   $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+ 
+
+</body>
+
+</html>
