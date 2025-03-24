@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Leibniz-Constructor de Ideas</title>
+  
+  
+ 
+
+   <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jsxgraph.css">
+       <script src="js/jsxcompressor.min.js" type="text/javascript"></script>
+      <script src="js/jsxgraphcore.js"></script>
+       <script type="text/javascript">
+        if (document.addEventListener) {
+            document.addEventListener('contextmenu', function (e) {
+                e.preventDefault();
+            }, false);
+        } else {
+            document.attachEvent('oncontextmenu', function () {
+                window.event.returnValue = false;
+            });
+        }
+    </script>
+
+    <script language="JavaScript">
+        function disableCtrlKeyCombination(e)
+        {
+                //list all CTRL + key combinations you want to disable
+                var forbiddenKeys = new Array("a", "s", "c");
+                var key;
+                var isCtrl;
+
+                if(window.event)
+                {
+                        key = window.event.keyCode;     //IE
+                        if(window.event.ctrlKey)
+                                isCtrl = true;
+                        else
+                                isCtrl = false;
+                }
+                else
+                {
+                        key = e.which;     //firefox
+                        if(e.ctrlKey)
+                                isCtrl = true;
+                        else
+                                isCtrl = false;
+                }
+
+                //if ctrl is pressed check if other key is in forbidenKeys array
+                if(isCtrl)
+                {
+                    for (i = 0; i < forbiddenKeys.length; i++)
+                        {
+                                //case-insensitive comparation
+                            if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase())
+                                {
+//                                    alert("Key combination CTRL + "
+//                                                + String.fromCharCode(key)
+//                                                + " has been disabled.");                                    
+                                        return false;
+                                }
+                        }
+                }
+                return true;
+        }
+    </script>
+  
+</head>
+
+<body nkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);" >
+
+  <nav class="navbar navbar-inverse navbar-global navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Leibniz v1.0</a>
+          <div class="col-lg-4">           
+          <div align="right"><img src="../img/leibniz.jpg"  style="width:34px;" alt="..." class="img-circle profile_img"></div>           
+         </div>
+
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-user navbar-right">
+        
+            <li><a href="../index.html"><span class="glyphicon glyphicon-log-out"></span> Salir</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<nav class="navbar-primary">
+  <a href="#" class="btn-expand-collapse"><span class="glyphicon glyphicon-menu-left"></span></a>
+  <ul class="navbar-primary-menu">
+    <li>
+      <a href="index.html" title="Simulador "><span class="glyphicon glyphicon-blackboard"></span><span class="nav-label">Simulador</span></a>
+      <a href="#"data-toggle="modal" data-target="#miModal" title="Objetivos de Aprendizaje" ><span class="glyphicon glyphicon-book"></span><span class="nav-label">Objetivos de Aprendizaje</span></a>
+      <a href="#" data-toggle="modal" data-target="#miModal2" title="Actividades de Aprendizaje"><span class="glyphicon glyphicon-book"></span><span class="nav-label">Actividades de Aprendizaje</span></a>
+      <a href="../index.html" title="Ir al Panel"><span class="glyphicon glyphicon-home" ></span><span class="nav-label">Panel</span></a>
+      
+    </li>
+  </ul>
+</nav>
+
+
+
+
+
+
+<div class="main-content">
+
+<div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Objetivos de aprendizaje:</h4>
+      </div>
+
+
+      <div class="modal-body">  
+<ul>
+<li>Asociar las razones de movimiento a relaciones funcionales.  
+<li>Establecer el tipo de dependencia entre las variables x vs t.
+<li>Visualizar las gráficas que relaciona v, x vs tiempo.
+<li>Identificar la expresión matemática o modelo utilizado para hallar la funcion de  x(t). 
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="miModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Actividades de Aprendizaje:</h4>
+      </div>
+      <div class="modal-body">   
+              <embed src="pdf/actividad.pdf" width="580" height="600">
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div class="container">
+  
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#home">Modelo</a></li>
+    <li><a data-toggle="pill" href="html/teoria.html#menu1">Teoría</a></li>
+
+  </ul>
+  
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+       <div id="box" class="jxgbox" style="width: 1100px; height: 600px; user-select: none; overflow: hidden; position: relative;">
+    </div>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+     
+       <object type="text/html" data="html/teoria.html" width="1100px" height="600px" style="width: 1100px; height: 600px; user-select: none; overflow: hidden; position: relative;">
+    </object>
+    </div>
+  </div>
+</div> 
+
+
+</div>
+  <script src="js/jquery.js"></script>
+   <script src="js/bootstrap.min.js"></script> 
+   <script  src="js/index.js"></script>
+   <script src="js/core.js"></script>
+
+<script>
+  $(function () {
+   $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+ 
+
+</body>
+
+</html>
