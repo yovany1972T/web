@@ -1,0 +1,979 @@
+﻿/* **** CSS for the Question Pages **** */
+
+.symbolfont
+{
+	font-family: Symbol;
+}
+
+/* ***** Question ***** */
+
+#qtitle
+{
+	font-weight: bold;
+	font-size: 15px;
+	font-family: Arial, sans-serif;
+	padding: 3px 0;
+	margin: 4px 0 10px 0;
+}
+
+#qnum
+{
+	float: right;
+	font-size: 12px;
+	font-weight: normal;
+	margin: 3px 12px 0 0;
+}
+
+#qnum img
+{
+	vertical-align: bottom;
+}
+
+#questiontext
+{
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	margin: 10px 0 10px 0;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #bbb;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #777;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 4px #ddd;
+}
+
+#questiontext p
+{
+	font-size: 14px !important;
+}
+
+#emark
+{
+	float: right;
+	font-size: 12px;
+}
+
+#question
+{
+	margin: 10px 0;
+	padding: 5px 5px 15px 5px;
+	text-align: left;
+}
+
+#stepsarea, #questionarea
+{
+	font-size: 14px;
+}
+
+.MathJax_Display
+{
+	color: black;
+}
+
+#questionarea
+{
+	background-color: #fdfdfd;
+	margin: 10px 0;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #bbb;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #777;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 4px #ddd;
+	text-align: left;
+}
+
+#questionpic
+{
+	display: none;
+}
+
+#questionpicl
+{
+	float: left;
+	margin: 3px 20px 3px 2px;
+}
+
+#questionpicr
+{
+	float: right;
+	margin: 3px 8px 3px 20px;
+}
+
+#qpixl
+{
+	float: left;
+	margin: 3px 20px 3px 2px;
+}
+
+#qpixr
+{
+	float: right;
+	margin: 3px 2px 3px 20px;
+}
+
+#apixl
+{
+	float: left;
+	margin: 3px 20px 3px 2px;
+}
+
+#apixr
+{
+	float: right;
+	margin: 3px 2px 3px 20px;
+}
+
+#explanation
+{
+	_font-size: 15px !important;
+	_font-family: Arial, sans-serif;
+}
+
+#explanation p
+{
+	_font-size: 15px !important;
+}
+
+/* ***** Question drop-down menu ***** */
+
+#ql2
+{
+	font-family: Arial;
+	position: absolute;
+	padding: 0;
+	top: -500px;
+	left: 0;
+	z-index: 999;
+	text-align: left;
+	cursor: pointer;
+}
+
+#ql2 .qll, #ql2 .qlb
+{
+	font-weight: normal;
+	font-size: 11px;
+	padding: 0 3px;
+	height: 16px;
+}
+
+#ql2 .qla
+{
+	padding: 0;
+	text-align: center;
+	height: 9px;
+}
+
+#ql2 .qlb
+{
+	text-align: center;
+	height: 12px;
+}
+
+/* ***** Calc Button ***** */
+
+.CalcButton
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: .80em;
+	border: 1px ridge #000000;
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+}
+
+/* ***** Timer ***** */
+
+#clocktimerbox
+{
+	float: right;
+	margin-left: 10px;
+}
+
+#examplehelpbox
+{
+	float: right;
+	margin-left: 5px;
+	padding-top: 1px;
+}
+
+#applettimer
+{
+	float: right;
+	vertical-align: middle;
+	margin: 0;
+}
+
+#clocktimer
+{
+	background-color: #888;
+	padding: 7px 2px 0 2px;
+	vertical-align: middle;
+	margin: 0;
+}
+
+#applettimer
+{
+	padding: 0;
+	background-color: #444;
+	margin: 3px 2px 0 0;
+}
+
+#clocktimer input, #applettimer input
+{
+	padding: 0;
+	margin: 0;
+}
+
+#marks
+{
+	padding: 0 4px;
+	color: yellow;
+	font-size: 11px;
+	font-family: Verdana, Arial, sans-serif;
+	font-weight: bold;
+	position: relative;
+	top: -5px;
+}
+
+/* ***** Applet ***** */
+
+applet
+{
+	z-index: -900;
+}
+
+.appletright
+{
+	float: right;
+	margin: 0 0 10px 20px;
+}
+
+.small, ul.small li
+{
+	font-size: 11px;
+}
+
+.tiny, ul.tiny li
+{
+	font-size: 9px;
+}
+
+/* **** DIV to clear things **** */
+
+div.clearer
+{
+	clear: both;
+	height: 1px;
+	margin: 0;
+	padding: 0;
+}
+
+/* **** CALCFONT special button displays **** */
+
+.calcfont
+{
+    font-size: 16px;
+    color: white;
+    background: url("/images/site/calcfontbg.png") repeat-x black;
+    font-weight: bold;
+    font-family: Digiface;
+    word-spacing: 1px;
+    margin: 1px 2px;
+    padding: 2px 5px 1px 5px;
+    border: 1px solid black;
+	border-radius: 2px;
+	box-shadow: 1px 1px 2px #888;
+}
+
+.calcfontsym
+{
+    font-size: 16px;
+    color: black;
+    background: url("/images/site/calcfontsymbg.png") repeat-x white;
+    font-weight: bold;
+    font-family: Arial;
+    word-spacing: 1px;
+    margin: 1px 2px;
+    padding: 2px 8px 1px 8px;
+    border: 1px solid #555;
+	border-radius: 2px;
+	box-shadow: 1px 1px 2px #888;
+}
+
+.calcfontpi
+{
+    font-size: 19px;
+    color: black;
+    background: url("/images/site/calcfontsymbg.png") repeat-x white;
+    font-weight: bold;
+    font-family: Times;
+    word-spacing: 0;
+    margin: 1px 2px;
+    padding: 0 8px;
+    border: 1px solid #555;
+	border-radius: 2px;
+	box-shadow: 1px 1px 2px #888;
+}
+
+sup.super8, sub.sub8
+{
+	font-size: 8px;
+}
+
+sup.super9, sub.sub9
+{
+	font-size: 9px;
+}
+
+sup.super10, sub.sub10
+{
+	font-size: 10px;
+}
+
+sup.super11, sub.sub11
+{
+	font-size: 11px;
+}
+
+.overln
+{
+	text-decoration: overline;
+}
+
+/* ***** Summary, DLFile and Applet Info area ***** */
+
+.qsummarybox
+{
+	border: 1px solid #3c4347;
+	margin: 16px 0;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+	font-family: "Century Gothic", Verdana, Arial, elvetica, sans-serif;
+}
+
+.qsummarybox h2
+{
+	color: white;
+	font-size: 14px;
+	margin: 0;
+	padding: 4px 10px;
+	letter-spacing: 0.05em;
+	font-weight: bold;
+	background: #3c4347 url("/images/site/h2header.png") no-repeat top right;
+}
+
+.qsummarycontent
+{
+	padding: 10px;
+	background: white;
+	font-size: 14px;
+}
+
+.qsummarycontent a, .qsummarycontent a:visited
+{
+	color: blue;
+	font-weight: blue;
+	text-decoration: none;
+	font-size: 14px !important;
+}
+
+.qsummarycontent a:hover
+{
+	color: red;
+	text-decoration: none;
+}
+
+#appinfoc
+{
+	text-align: center;
+}
+
+.summarystrong
+{
+	font-size: 140%;
+	font-weight: bold;
+}
+
+.appletimg
+{
+	float: left;
+	margin: 0 4px 4px 0;
+}
+
+.dltext
+{
+	margin-top: 5px;
+	padding: 3px;
+}
+
+/* - - - - - */
+
+.dltext
+{
+	background-color: #ccf;
+	color: #006;
+	border: 1px solid #559;
+}
+
+#moreblock
+{
+	float: right;
+}
+
+#qmore
+{
+	background-color: #f8f8f8;
+	color: #666;
+	padding: 0 0 5px 0;
+	box-shadow: 4px 4px 6px #999;
+	max-height: 600px;
+	overflow: auto;
+	font-size: 10px;
+	z-index: 1000;
+}
+
+#qmoretitle
+{
+	text-align: center;
+	padding: 2px 10px;
+	_border-bottom: 1px solid #555;
+	background-color: #e0e0e0;
+	font-size: 14px;
+	color: black;
+}
+
+#qmore .qmorelist, #qmore .qmorelistsel
+{
+	color: #333;
+	font-size: 12px;
+	padding: 3px 10px;
+	cursor: pointer;
+}
+
+#qmore .qmorelistsel
+{
+	background-color: #eee;
+}
+
+.qmorelist:hover
+{
+	background-color: #a2e7fe;
+	cursor: pointer;
+}
+
+.qmorelistsel:hover
+{
+	cursor: pointer;
+	background-color: #a2e7fe;
+}
+
+.prevattemptinner
+{
+	float: left;
+	width: 23%;
+	font-weight: bold;
+	font-size: 14px;
+	margin-left: 10px;
+	border-left: 1px solid #eee;
+	padding-left: 10px;
+}
+
+.previndent
+{
+	margin-left: 20px;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.tfline
+{
+	xwidth: 120px;
+	clear: both;
+}
+
+.tfbox
+{
+	float: left;
+	width: 30px;
+	border: 1px solid black;
+	font-size: 15px;
+	color: black;
+	text-align: center;
+	padding: 5px;
+}
+
+.tfboxh
+{
+	float: left;
+	width: 30px;
+	border: 1px solid black;
+	background-color: #eee;
+	font-size: 18px;
+	color: black;
+	text-align: center;
+	padding: 5px;
+}
+
+#jsmcode
+{
+	text-align: left;
+}
+
+#jsmbuttons
+{
+	margin: 0 0 10px 0;
+	text-align: center;
+	vertical-align: bottom;
+	background-color: #ccc;
+	border: 1px solid #333;
+	border-radius: 2px;
+	padding: 4px 2px 4px 2px;
+}
+
+.qbutton
+{
+	display: inline;
+	background-color: #444; /*#2b3336;*/
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0 2px;
+	border-radius: 1px;
+	padding: 2px 6px;
+	text-align: center;
+	line-height: 1em;
+	height: 20px !important;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.qbutton:hover
+{
+	background-color: black; /*#16750b;*/
+	cursor: pointer;
+}
+
+.jsmchbtns
+{
+	padding-top: 0;
+}
+
+.math
+{
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+/* **** JAVASCRIPT APPLETS **** */
+
+/* **** COMMON ITEMS **** */
+
+.aptheme
+{
+/*	box-shadow: 2px 2px 4px #bbc, inset 3px 3px 3px rgba(255, 255, 255, 0.6), inset -3px -3px 3px rgba(100, 100, 100, 0.2);*/
+	box-shadow: 2px 2px 4px #bbc;
+}
+
+/* **** Results div **** */
+
+#appresults
+{
+	text-align: center;
+	margin: 10px auto 20px auto;
+	padding: 2px;
+	font-size: 13px;
+	font-weight: bold;
+	border-radius: 1px;
+}
+
+#appresults img
+{
+	vertical-align: middle;
+	border: 1px solid #889;
+}
+
+#appresults img.scoreimg
+{
+	padding: 2px 3px;
+	margin-bottom: 4px;
+	background-color: white;
+}
+
+#appresults #applettimer img
+{
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+#fldlevel, #fldcorrect, #fldscore, #fldattempts
+{
+	text-align: center;
+	color: black;
+	background-color: white;
+	font-weight: bold;
+}
+
+#resetbtn
+{
+	width: 120px;
+	font-size: 10px;
+}
+
+/* **** Table height restriction div **** */
+
+#uiouterbox
+{
+	overflow: auto;
+}
+
+/* **** Question numbers **** */
+
+.uiqnumber, .mcqnumber
+{
+	color: white;
+	text-align: center;
+	padding: 0 8px;
+	margin-right: 5px;
+	border-radius: 3px;
+	box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.6), inset -2px -2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* **** Question text **** */
+
+.uiquestion, .mcquestion
+{
+	padding: 1px 20px;
+}
+
+/* **** Answer text **** */
+
+.uianswer
+{
+	padding: 2px 8px;
+}
+
+/* **** Blank line between questions **** */
+
+.uiblankline
+{
+	font-size: 20px;
+	background: white url("/images/site/mcline.png") repeat-x;
+}
+
+img#examplehelpbtn
+{
+	border: none;
+}
+
+/* **** Cloze Applet **** */
+
+#clozebox
+{
+	text-align: left;
+	padding: 10px;
+	margin: 16px auto 10px auto;
+	line-height: 1.8em;
+	border-radius: 5px;
+}
+
+/* **** Drag-N-Drop Applet **** */
+
+.dndbox
+{
+	position: absolute;
+	padding: 5px;
+	border-radius: 3px;
+}
+
+.landingpad
+{
+	position: absolute;
+	padding: 5px;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+	background-color: #f8f8f8;
+	border-radius: 3px;
+	box-shadow: #bbb 2px 2px 4px;
+}
+
+.markimage
+{
+	position: absolute;
+}
+
+/* MultiChoice Applet */
+
+/* **** Hidden Colour settings for highlight and answer background **** */
+
+#appbgcol
+{
+	color: #e3f4fb;
+}
+
+#appcorrectcol
+{
+	color: #ff8;
+}
+
+/* **** The table height restriction div **** */
+
+#mcouterbox
+{
+	height: 500px;
+	overflow: auto;
+}
+
+/* **** Answer text **** */
+
+.mcanswer
+{
+	padding: 2px 20px 2px 8px;
+	cursor: pointer;
+	white-space: nowrap;
+	border-radius: 3px;
+}
+
+/* **** No Answer cell **** */
+
+.mcnoanswer
+{
+	background-color: white;
+	padding: 2px 8px;
+}
+
+/* **** Radio buttons **** */
+
+#mchoicetable td input
+{
+	cursor: pointer;
+}
+
+/* **** Blank line between questions **** */
+
+.mcblankline
+{
+	font-size: 2px;
+	background-color: white;
+	padding: 5px;
+}
+
+img#examplehelpbtn
+{
+	border: none;
+}
+
+.moreinfo
+{
+	opacity: 0.7;
+	font-size: 80%;
+}
+
+/* **** Table Test applet **** */
+
+#tttable
+{
+	background-color: #ddd;
+	border-spacing: 6px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+	margin-bottom: 10px;
+}
+
+#tttable th
+{
+	background-color: #333;
+	color: white;
+	padding: 4px 6px;
+	font-size: 14px;
+}
+
+#tttable td
+{
+	background-color: white;
+	padding: 4px 6px;
+	font-size: 13px;
+	border: 1px solid #999;
+	text-align: center;
+}
+
+#tttable td.ttempty, #tttable td.ttsubmit
+{
+	background-color: transparent;
+	padding: 0;
+	border: none;
+}
+
+#tttable td.ttentry
+{
+	background-color: #ff8 !important;
+}
+
+.MathJax_Display
+{
+	text-align: left !important;
+}
+
+/* **** Custom Select Drop-down Menu that can contain MathJax code **** */
+
+.mnselect
+{
+	display: inline-block;
+	padding: 3px 34px 3px 4px;
+	border: 1px solid #999;
+	margin: 0 5px 5px 5px;
+	cursor: pointer;
+	background: url("/images/site/mnselect.png") no-repeat right;
+	background-size: contain;
+}
+
+.mnselmenu
+{
+	border: 1px solid #999;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.mnselitem
+{
+	background-color: white;
+	padding: 3px 4px;
+}
+
+.mnselitem:hover
+{
+	background-color: #eee;
+	cursor: pointer;
+}
+
+/* **** Graphic Calculator Box **** */
+
+.grcalcbox
+{
+	background: url("/images/site/ti83large.png") no-repeat top 8px left 5px #cff;
+	border: 1px solid #1d718d;
+	padding: 10px 10px 10px 110px;
+	font-family: "Century Gothic", Verdana, Arial, Helvetica, sans-serif;
+	box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+	margin: 5px 3px 10px 0;
+	min-height: 190px;
+}
+
+.grcalcbox p, .grcalcbox li
+{
+	font-size: 14px;
+}
+
+.grcalctitle
+{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.grcalcstore, .grcalcalpha
+{
+	color: white;
+	padding: 2px 5px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.grcalcstore
+{
+	background-color: black;
+}
+
+.grcalcalpha
+{
+	background-color: #1d6b4f;
+}
+
+.grcalcbox .math
+{
+	font-size: 14px !important;
+	color: black;
+}
+
+.gcpicblock
+{
+	float: right;
+}
+
+.gcpix
+{
+	padding: 5px;
+	border: 1px solid #ddd;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* **** MNQuiz **** */
+
+#mnquiz
+{
+	display: flex;
+}
+
+#mnquizpic
+{
+	border: 1px #eee solid;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+	margin: 0 20px 10px 0;
+}
+
+#mnquizquestions
+{
+}
+
+#mnquizquestion
+{
+	font-size: 14px;
+}
+
+.mnquizq
+{
+	font-size: 16px;
+	padding: 8px;
+	background-color: #eee;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+	margin: 6px;
+}
+
+.mnquizq:hover
+{
+	background-color: #def;
+	cursor: pointer;
+}
+
+.mnquizqc
+{
+	text-align: center;
+}
+
+.qcorrect
+{
+	background-color: #8f8 !important;
+}
+
+.qwrong1
+{
+	background-color: yellow !important;
+}
+
+.qwrong2
+{
+	background-color: #f88 !important;
+}
+
+/* Hide MathJax preview */
+
+.MathJax_Preview
+{
+	display: none;
+}
